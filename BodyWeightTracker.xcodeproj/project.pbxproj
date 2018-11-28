@@ -13,6 +13,9 @@
 		B832212021AC995E00000076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B832211F21AC995E00000076 /* Assets.xcassets */; };
 		B832212321AC995E00000076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B832212121AC995E00000076 /* LaunchScreen.storyboard */; };
 		B832212E21AC995E00000076 /* BodyWeightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832212D21AC995E00000076 /* BodyWeightTrackerTests.swift */; };
+		B832213921ACACF200000076 /* MeasurementEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832213821ACACF200000076 /* MeasurementEntry.swift */; };
+		B832213C21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B832213A21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld */; };
+		B832216D21AE116600000076 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832216C21AE116600000076 /* Measurement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		B832212921AC995E00000076 /* BodyWeightTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodyWeightTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B832212D21AC995E00000076 /* BodyWeightTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightTrackerTests.swift; sourceTree = "<group>"; };
 		B832212F21AC995E00000076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B832213821ACACF200000076 /* MeasurementEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementEntry.swift; sourceTree = "<group>"; };
+		B832213B21ADDC8400000076 /* MeasurementDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeasurementDatabase.xcdatamodel; sourceTree = "<group>"; };
+		B832216C21AE116600000076 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,15 @@
 		B832211721AC995D00000076 /* BodyWeightTracker */ = {
 			isa = PBXGroup;
 			children = (
+				B832213A21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld */,
+				B832216C21AE116600000076 /* Measurement.swift */,
 				B832211821AC995D00000076 /* AppDelegate.swift */,
 				B832211A21AC995D00000076 /* ViewController.swift */,
 				B832211C21AC995D00000076 /* Main.storyboard */,
 				B832211F21AC995E00000076 /* Assets.xcassets */,
 				B832212121AC995E00000076 /* LaunchScreen.storyboard */,
 				B832212421AC995E00000076 /* Info.plist */,
+				B832213821ACACF200000076 /* MeasurementEntry.swift */,
 			);
 			path = BodyWeightTracker;
 			sourceTree = "<group>";
@@ -199,6 +208,9 @@
 			files = (
 				B832211B21AC995D00000076 /* ViewController.swift in Sources */,
 				B832211921AC995D00000076 /* AppDelegate.swift in Sources */,
+				B832216D21AE116600000076 /* Measurement.swift in Sources */,
+				B832213C21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld in Sources */,
+				B832213921ACACF200000076 /* MeasurementEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 894JK8L3GF;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = BodyWeightTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +393,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 894JK8L3GF;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = BodyWeightTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,6 +479,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B832213A21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B832213B21ADDC8400000076 /* MeasurementDatabase.xcdatamodel */,
+			);
+			currentVersion = B832213B21ADDC8400000076 /* MeasurementDatabase.xcdatamodel */;
+			path = MeasurementDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B832210D21AC995D00000076 /* Project object */;
 }
