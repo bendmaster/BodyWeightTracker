@@ -109,8 +109,6 @@
                     <connections>
                         <outlet property="backgroundContainer" destination="fHq-Ak-kC9" id="z2c-I2-BfZ"/>
                         <outlet property="bodyFatField" destination="8EV-qf-RqH" id="0Vk-fz-jIZ"/>
-                        <outlet property="submitBottomConstraint" destination="8zT-Oo-5Ob" id="SXc-Bq-ior"/>
-                        <outlet property="submitTopConstraint" destination="Kqc-WD-0Am" id="JoJ-J4-pLj"/>
                         <outlet property="toggleValue" destination="FCX-ml-YP5" id="VIw-FW-XqI"/>
                         <outlet property="weightField" destination="bfg-Bu-wQM" id="OBA-x2-PM1"/>
                     </connections>
