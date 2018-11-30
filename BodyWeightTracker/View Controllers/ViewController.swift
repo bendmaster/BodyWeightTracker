@@ -46,6 +46,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let context = container.viewContext
+
+        
+        try? context.save()
+    }
+    
     
     @IBAction func submitButton(_ sender: Any) {
         

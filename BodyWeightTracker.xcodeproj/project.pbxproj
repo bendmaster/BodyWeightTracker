@@ -14,6 +14,8 @@
 		B832212321AC995E00000076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B832212121AC995E00000076 /* LaunchScreen.storyboard */; };
 		B832212E21AC995E00000076 /* BodyWeightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832212D21AC995E00000076 /* BodyWeightTrackerTests.swift */; };
 		B832213C21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B832213A21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld */; };
+		B899A5C221B1AC52009830C0 /* MeasurementTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899A5C121B1AC52009830C0 /* MeasurementTableCell.swift */; };
+		B899A5C421B1AD76009830C0 /* MeasurementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899A5C321B1AD76009830C0 /* MeasurementTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		B832212D21AC995E00000076 /* BodyWeightTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightTrackerTests.swift; sourceTree = "<group>"; };
 		B832212F21AC995E00000076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B832213B21ADDC8400000076 /* MeasurementDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeasurementDatabase.xcdatamodel; sourceTree = "<group>"; };
+		B899A5C121B1AC52009830C0 /* MeasurementTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementTableCell.swift; sourceTree = "<group>"; };
+		B899A5C321B1AD76009830C0 /* MeasurementTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeasurementTableViewController.swift; path = "BodyWeightTracker/View Controllers/MeasurementTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B832211A21AC995D00000076 /* ViewController.swift */,
+				B899A5C321B1AD76009830C0 /* MeasurementTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				B832211C21AC995D00000076 /* Main.storyboard */,
+				B899A5C121B1AC52009830C0 /* MeasurementTableCell.swift */,
 				B832212121AC995E00000076 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -225,8 +231,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B832211B21AC995D00000076 /* ViewController.swift in Sources */,
+				B899A5C421B1AD76009830C0 /* MeasurementTableViewController.swift in Sources */,
 				B832211921AC995D00000076 /* AppDelegate.swift in Sources */,
 				B832213C21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld in Sources */,
+				B899A5C221B1AC52009830C0 /* MeasurementTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
