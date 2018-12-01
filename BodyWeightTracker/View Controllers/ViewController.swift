@@ -66,15 +66,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         entry.weight = Double(wt)!
         entry.dateCreated = Date()
         
-        try? context.save()
-        
-        let request: NSFetchRequest<MeasurementEntry> = MeasurementEntry.fetchRequest()
-        let results = try? context.fetch(request)
-        
-        for result in results! {
-            print("BF:\(result.bodyFat) WT:\(result.weight) D:\(result.dateCreated!)")
-        }
-        
+        try? context.save()     
         
 
     }
