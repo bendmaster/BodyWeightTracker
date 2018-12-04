@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25EDEF418A5D77F1B1A1A856 /* Pods_BodyWeightTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CE4A3411BA7566FCE7B47D /* Pods_BodyWeightTracker.framework */; };
+		B82AAB0821B5F842008832D0 /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82AAB0721B5F842008832D0 /* SubmitButton.swift */; };
 		B832211921AC995D00000076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832211821AC995D00000076 /* AppDelegate.swift */; };
 		B832211B21AC995D00000076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832211A21AC995D00000076 /* ViewController.swift */; };
 		B832211E21AC995D00000076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B832211C21AC995D00000076 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		1F6471A4CE6A1A968D16FAA2 /* Pods-BodyWeightTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyWeightTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BodyWeightTracker/Pods-BodyWeightTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		48A42A3E4A4427228F3BA2E3 /* Pods_BodyWeightTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyWeightTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CE4A3411BA7566FCE7B47D /* Pods_BodyWeightTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyWeightTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82AAB0721B5F842008832D0 /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		B832211521AC995D00000076 /* BodyWeightTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyWeightTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B832211821AC995D00000076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B832211A21AC995D00000076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				B832211C21AC995D00000076 /* Main.storyboard */,
 				B899A5C121B1AC52009830C0 /* MeasurementTableCell.swift */,
 				B832212121AC995E00000076 /* LaunchScreen.storyboard */,
+				B82AAB0721B5F842008832D0 /* SubmitButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				B899A5C421B1AD76009830C0 /* MeasurementTableViewController.swift in Sources */,
 				B832211921AC995D00000076 /* AppDelegate.swift in Sources */,
 				B8B80D4821B340B200CA68C9 /* GraphViewController.swift in Sources */,
+				B82AAB0821B5F842008832D0 /* SubmitButton.swift in Sources */,
 				B832213C21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld in Sources */,
 				B899A5C221B1AC52009830C0 /* MeasurementTableCell.swift in Sources */,
 			);

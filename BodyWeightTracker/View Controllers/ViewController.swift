@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     let themeKey = "theme"
     
+    private var contentSubmitted = false
+    
     let container = ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer)!
     
     
@@ -28,11 +30,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var backgroundContainer: UIView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         bodyFatField.delegate = self
         weightField.delegate = self
+        
         
         if let toggleState = UserDefaults.standard.value(forKey: themeKey) {
             toggleValue.isOn = toggleState as! Bool
@@ -46,30 +49,66 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let context = container.viewContext
-
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         
-        try? context.save()
+        switch identifier {
+            
+        case "SubmitButtonSegue":
+            let bf:String = bodyFatField.text!
+            let wt:String = weightField.text!
+            let context = container.viewContext
+            
+            if bf.count > 1 && wt.count > 1 {
+                
+                contentSubmitted = true
+                
+                let entry = MeasurementEntry(context: context)
+                
+                entry.bodyFat = Double(bf)!
+                entry.weight = Double(wt)!
+                entry.dateCreated = Date()
+                try? context.save()
+                return true
+                
+            }
+                
+            else {
+                return false
+            }
+        case "GraphBarButtonSegue", "TableBarButtonSegue":
+            return true
+            
+        default:
+            return false
+            
+        }
+        
+        
+        
+        
     }
     
     
-    @IBAction func submitButton(_ sender: Any) {
-        
-        let bf:String = bodyFatField.text!
-        let wt:String = weightField.text!
-        let context = container.viewContext
-        
-        let entry = MeasurementEntry(context: context)
-        
-        entry.bodyFat = Double(bf)!
-        entry.weight = Double(wt)!
-        entry.dateCreated = Date()
-        
-        try? context.save()     
-        
-
-    }
+    //    @IBAction func submitButton(_ sender: Any) {
+    //
+    //        let bf:String = bodyFatField.text!
+    //        let wt:String = weightField.text!
+    //        let context = container.viewContext
+    //
+    //        if bf.count > 1 && wt.count > 1 {
+    //
+    //            contentSubmitted = true
+    //
+    //            let entry = MeasurementEntry(context: context)
+    //
+    //            entry.bodyFat = Double(bf)!
+    //            entry.weight = Double(wt)!
+    //            entry.dateCreated = Date()
+    //
+    //        }
+    //
+    //
+    //    }
     
     func themeToggle() {
         if toggleValue.isOn {
