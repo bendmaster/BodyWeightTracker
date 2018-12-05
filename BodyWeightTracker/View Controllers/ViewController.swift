@@ -15,8 +15,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     let themeKey = "theme"
     
-    private var contentSubmitted = false
-    
     let container = ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer)!
     
     
@@ -35,6 +33,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         bodyFatField.delegate = self
         weightField.delegate = self
+        weightField.text = ""
+        bodyFatField.text = ""
         
         
         if let toggleState = UserDefaults.standard.value(forKey: themeKey) {
@@ -54,27 +54,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         switch identifier {
             
         case "SubmitButtonSegue":
-            let bf:String = bodyFatField.text!
-            let wt:String = weightField.text!
-            let context = container.viewContext
+            return saveData()
             
-            if bf.count > 1 && wt.count > 1 {
-                
-                contentSubmitted = true
-                
-                let entry = MeasurementEntry(context: context)
-                
-                entry.bodyFat = Double(bf)!
-                entry.weight = Double(wt)!
-                entry.dateCreated = Date()
-                try? context.save()
-                return true
-                
-            }
-                
-            else {
-                return false
-            }
         case "GraphBarButtonSegue", "TableBarButtonSegue":
             return true
             
@@ -89,27 +70,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    //    @IBAction func submitButton(_ sender: Any) {
-    //
-    //        let bf:String = bodyFatField.text!
-    //        let wt:String = weightField.text!
-    //        let context = container.viewContext
-    //
-    //        if bf.count > 1 && wt.count > 1 {
-    //
-    //            contentSubmitted = true
-    //
-    //            let entry = MeasurementEntry(context: context)
-    //
-    //            entry.bodyFat = Double(bf)!
-    //            entry.weight = Double(wt)!
-    //            entry.dateCreated = Date()
-    //
-    //        }
-    //
-    //
-    //    }
-    
     func themeToggle() {
         if toggleValue.isOn {
             backgroundContainer.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
@@ -119,10 +79,91 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    private func getNoon()-> Date {
+        var now = Date()
+        var nowComponents = DateComponents()
+        let calendar = Calendar.current
+        nowComponents.year = Calendar.current.component(.year, from: now)
+        nowComponents.month = Calendar.current.component(.month, from: now)
+        nowComponents.day = Calendar.current.component(.day, from: now)
+        nowComponents.hour = 12
+        nowComponents.minute = 00
+        nowComponents.second = 00
+        nowComponents.timeZone = NSTimeZone.local
+        now = calendar.date(from: nowComponents)!
+        return now as Date
+    }
     
     @IBAction func toggle(_ sender: Any) {
         UserDefaults.standard.set(toggleValue.isOn, forKey: themeKey)
         themeToggle()
+    }
+    
+    func saveData() -> Bool {
+        
+        let bf:String = bodyFatField.text!
+        let wt:String = weightField.text!
+        let context = container.viewContext
+        
+        if bf.count > 1 && wt.count > 1 {
+            
+            let date = Date()
+            var calendar = Calendar.current
+            calendar.timeZone = NSTimeZone.local
+            
+            // Get today's beginning & end
+            let dateFrom = calendar.startOfDay(for: Date())
+            let dateTo = calendar.date(byAdding: .day, value: 1, to: dateFrom)
+            
+            // Set predicate as date being today's date
+            let fromPredicate = NSPredicate(format: "%@ >= %@", date as NSDate, dateFrom as NSDate)
+            let toPredicate = NSPredicate(format: "%@ < %@", date as NSDate, dateTo! as NSDate)
+            let datePredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [fromPredicate, toPredicate])
+            
+            let request: NSFetchRequest<MeasurementEntry> = MeasurementEntry.fetchRequest()
+            request.predicate = datePredicate
+            
+            let retrievedEntry = try? context.fetch(request)
+            
+            if !(retrievedEntry?.isEmpty)! {
+                
+                let previouslyRecordedEntry = retrievedEntry![0]
+                
+                let beforeNoon = (Date() < getNoon())
+                if beforeNoon {
+                    previouslyRecordedEntry.bodyFatMorning = Double(bf)!
+                    previouslyRecordedEntry.weightMorning = Double(wt)!
+                }
+                else {
+                    previouslyRecordedEntry.bodyFatAfternoon = Double(bf)!
+                    previouslyRecordedEntry.weightAfternoon = Double(wt)!
+                }
+                
+            }
+            else {
+            
+                let entry = MeasurementEntry(context: context)
+                entry.dateCreated = Date()
+                let beforeNoon = (entry.dateCreated! < getNoon())
+                if beforeNoon {
+                    entry.bodyFatMorning = Double(bf)!
+                    entry.weightMorning = Double(wt)!
+                }
+                else {
+                    entry.bodyFatAfternoon = Double(bf)!
+                    entry.weightAfternoon = Double(wt)!
+                }
+            }
+            
+            
+            try? context.save()
+            return true
+            
+        }
+            
+        else {
+            return false
+        }
     }
     
     

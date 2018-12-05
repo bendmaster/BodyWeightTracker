@@ -58,8 +58,8 @@ class MeasurementTableViewController: UITableViewController {
         
         let entry = entries[indexPath.row]
         
-        cell.bfProperty.text = " BF%: " + String(entry.bodyFat)
-        cell.weightProperty.text = " Weight: " + String(entry.weight)
+        cell.bfProperty.text = " BF%: " + String(entry.bodyFatMorning)
+        cell.weightProperty.text = " Weight: " + String(entry.weightMorning)
         let unformattedDate = entry.dateCreated!
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
