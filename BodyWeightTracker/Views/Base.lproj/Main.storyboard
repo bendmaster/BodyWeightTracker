@@ -148,8 +148,11 @@
                         <outlet property="backgroundContainer" destination="fHq-Ak-kC9" id="z2c-I2-BfZ"/>
                         <outlet property="bfWarning" destination="Ggb-R1-gcU" id="iKV-f7-O7a"/>
                         <outlet property="bodyFatField" destination="8EV-qf-RqH" id="0Vk-fz-jIZ"/>
+                        <outlet property="bodyFatText" destination="HV0-jO-7Ve" id="vc1-k6-x4y"/>
+                        <outlet property="submitButton" destination="xYx-yk-5yQ" id="zZj-9a-CVr"/>
                         <outlet property="toggleValue" destination="FCX-ml-YP5" id="VIw-FW-XqI"/>
                         <outlet property="weightField" destination="bfg-Bu-wQM" id="OBA-x2-PM1"/>
+                        <outlet property="weightText" destination="m6E-4t-YAV" id="dQ3-Fj-0ae"/>
                         <outlet property="wtWarning" destination="FHm-W5-MGD" id="uZT-aP-jFe"/>
                     </connections>
                 </viewController>

@@ -16,6 +16,7 @@
 		B832212321AC995E00000076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B832212121AC995E00000076 /* LaunchScreen.storyboard */; };
 		B832212E21AC995E00000076 /* BodyWeightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832212D21AC995E00000076 /* BodyWeightTrackerTests.swift */; };
 		B832213C21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B832213A21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld */; };
+		B857BD6721C60467006A0CD5 /* colorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B857BD6621C60467006A0CD5 /* colorTheme.swift */; };
 		B899A5C221B1AC52009830C0 /* MeasurementTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899A5C121B1AC52009830C0 /* MeasurementTableCell.swift */; };
 		B899A5C421B1AD76009830C0 /* MeasurementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899A5C321B1AD76009830C0 /* MeasurementTableViewController.swift */; };
 		B8B80D4821B340B200CA68C9 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B80D4721B340B200CA68C9 /* GraphViewController.swift */; };
@@ -50,6 +51,7 @@
 		B832212D21AC995E00000076 /* BodyWeightTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightTrackerTests.swift; sourceTree = "<group>"; };
 		B832212F21AC995E00000076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B832213B21ADDC8400000076 /* MeasurementDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeasurementDatabase.xcdatamodel; sourceTree = "<group>"; };
+		B857BD6621C60467006A0CD5 /* colorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorTheme.swift; sourceTree = "<group>"; };
 		B899A5C121B1AC52009830C0 /* MeasurementTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementTableCell.swift; sourceTree = "<group>"; };
 		B899A5C321B1AD76009830C0 /* MeasurementTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeasurementTableViewController.swift; path = "BodyWeightTracker/View Controllers/MeasurementTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		B8B80D4721B340B200CA68C9 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B832213A21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld */,
+				B857BD6621C60467006A0CD5 /* colorTheme.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				B832211921AC995D00000076 /* AppDelegate.swift in Sources */,
 				B8B80D4821B340B200CA68C9 /* GraphViewController.swift in Sources */,
 				B82AAB0821B5F842008832D0 /* SubmitButton.swift in Sources */,
+				B857BD6721C60467006A0CD5 /* colorTheme.swift in Sources */,
 				B832213C21ADDC8400000076 /* MeasurementDatabase.xcdatamodeld in Sources */,
 				B899A5C221B1AC52009830C0 /* MeasurementTableCell.swift in Sources */,
 			);

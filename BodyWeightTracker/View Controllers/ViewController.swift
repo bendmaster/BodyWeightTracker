@@ -17,12 +17,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     let container = ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer)!
     
+    // MARK: Themes
+    
+    let darkTheme = colorTheme(backgroundColor: .black, textColor: .white, buttonColor: .red, buttonTextColor: .white, errorColor: #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1))
+    let lightTheme = colorTheme(backgroundColor: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), textColor: .black, buttonColor: .blue, buttonTextColor: .white, errorColor: .red)
+    
     
     // MARK: Outlets
     
     @IBOutlet weak var bodyFatField: UITextField!
     
     @IBOutlet weak var toggleValue: UISwitch!
+    
+    @IBOutlet weak var bodyFatText: UILabel!
+    
+    @IBOutlet weak var weightText: UILabel!
     
     @IBOutlet weak var weightField: UITextField!
     
@@ -32,6 +41,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var wtWarning: UILabel!
     
+    @IBOutlet weak var submitButton: SubmitButton!
+    
+    private var texts = [UILabel]()
+    
+    private var warnings = [UILabel]()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +55,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         weightField.delegate = self
         weightField.text = ""
         bodyFatField.text = ""
+        
+        texts = [bodyFatText, weightText]
+        warnings = [bfWarning, wtWarning]
         
         
         if let toggleState = UserDefaults.standard.value(forKey: themeKey) {
@@ -73,21 +92,32 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     private func themeToggle() {
+        
+        var currentTheme: colorTheme
+        
         if toggleValue.isOn {
-            backgroundContainer.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+            
+            currentTheme = lightTheme
+            
         }
         else {
-            backgroundContainer.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+            
+            currentTheme = darkTheme
         }
+        
+        backgroundContainer.backgroundColor = currentTheme.backgroundColor
+        texts.forEach { $0.textColor = currentTheme.textColor }
+        warnings.forEach { $0.textColor = currentTheme.errorColor.withAlphaComponent(0.0) }
+        submitButton.backgroundColor = currentTheme.buttonColor
     }
     
     private func displayWarning(textfield: UITextField, containsNonDigitChars: Bool) {
         if containsNonDigitChars != true {
             if textfield == bodyFatField {
-                bfWarning.textColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1).withAlphaComponent(0.0)
+                bfWarning.textColor = bfWarning.textColor.withAlphaComponent(0.0)
             }
             else if textfield == weightField {
-                wtWarning.textColor =  #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1).withAlphaComponent(0.0)
+                wtWarning.textColor =  bfWarning.textColor.withAlphaComponent(0.0)
             }
             
         }
@@ -193,8 +223,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return false
         }
     }
-    
-    
+        
     
 }
 

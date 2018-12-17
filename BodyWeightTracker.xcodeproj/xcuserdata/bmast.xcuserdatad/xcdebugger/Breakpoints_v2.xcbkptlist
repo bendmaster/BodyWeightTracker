@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BodyWeightTracker/ViewController.swift"
+            timestampString = "565156539.7843781"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BodyWeightTracker.ViewController.submitTopConstraint.getter : weak Swift.Optional&lt;__C.NSLayoutConstraint&gt;"
+                  moduleName = "BodyWeightTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bmast/xCodeProjects/BodyWeightTracker/BodyWeightTracker/ViewController.swift"
+                  timestampString = "565038974.811891"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BodyWeightTracker.ViewController.submitTopConstraint.setter : weak Swift.Optional&lt;__C.NSLayoutConstraint&gt;"
+                  moduleName = "BodyWeightTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bmast/xCodeProjects/BodyWeightTracker/BodyWeightTracker/ViewController.swift"
+                  timestampString = "565038974.814829"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BodyWeightTracker.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; BodyWeightTracker.ViewController"
+                  moduleName = "BodyWeightTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bmast/xCodeProjects/BodyWeightTracker/BodyWeightTracker/ViewController.swift"
+                  timestampString = "565038974.816753"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "285">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BodyWeightTracker.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;BodyWeightTracker.ViewController&gt;"
+                  moduleName = "BodyWeightTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bmast/xCodeProjects/BodyWeightTracker/BodyWeightTracker/ViewController.swift"
+                  timestampString = "565038974.8187571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "256">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

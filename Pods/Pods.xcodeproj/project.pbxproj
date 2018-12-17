@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		102120C0EAEB47AD5B780B8E3DCE6208 /* DotPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0288B89DF6B139384E26C2B991B77AB8 /* DotPlot.swift */; };
+		13404A0C0534DC9FC446E55A1D4AF073 /* BarDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9073AD1B8827FFAD099F06C5856977 /* BarDrawingLayer.swift */; };
+		24D90655DC4DFF6A99CF1972BF0E585A /* ReferenceLineDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8516FCE986A75C528498E54CCD156FCC /* ReferenceLineDrawingView.swift */; };
+		4846B187852A32941EEFB844DCC36ED3 /* GradientDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF793481676F9CE653C739E16D50E9D /* GradientDrawingLayer.swift */; };
+		486B49D20F10AD961D1D07D702DD42B7 /* ScrollableGraphView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0725E40D466B505ECA643A2176E00DA4 /* ScrollableGraphView-dummy.m */; };
+		551F5A0B01C5156D6B91C814478DE8F5 /* GraphPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383C36B4D1526870755352EB2F1194B9 /* GraphPointAnimation.swift */; };
+		55B9C1A56CB00D0ECB520814BFA1665E /* LabelPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D91E89605B3174FADD87345EFD5BF /* LabelPool.swift */; };
+		56E967E2AAB19380DB5A343524F714C5 /* Pods-BodyWeightTrackerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F56D9C96E8582036FAB30FEF12351A7 /* Pods-BodyWeightTrackerTests-dummy.m */; };
+		6263350FF4D6EBE5C3E5749EF8759492 /* FillDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49159E569B9C149852AB1885E4E173 /* FillDrawingLayer.swift */; };
+		6C620BA67FE9E4263E16C17F434CD1BB /* Pods-BodyWeightTrackerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB070B2C45098F500B0D3FD93E6415B0 /* Pods-BodyWeightTrackerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74B4ED70186F6F4F1FF2A03EC45CAC2B /* BarPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB171068B54D1CC0B7C1B2EECD511F9 /* BarPlot.swift */; };
+		792A560496D04B818207ADEF281FEAEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		7ED860995F13B4ADC2B0D0290C6D2B28 /* ScrollableGraphViewDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5744E0C2786A89FB65360D08C8CB0 /* ScrollableGraphViewDrawingLayer.swift */; };
+		86F1A11795EE1E0EC9EB58E275F7730F /* LineDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E70AF8FE402B9BE6D27C69EE2E3453 /* LineDrawingLayer.swift */; };
+		8BC0CA090ED7FFBB348415113EDB8A6E /* Pods-BodyWeightTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE569B45D3E873BA8CC017461EBA86A2 /* Pods-BodyWeightTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D3EDA836275C0316C985EB581298C55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		9E75ECE18F9742D634D2FD8900A34CD3 /* DotDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06541AC641578E857865B7403D818B13 /* DotDrawingLayer.swift */; };
+		CAAA5147C71509AF7141A6281380FA1C /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCA206A04E9F983523B003079F45DA5 /* Plot.swift */; };
+		CC1B3E5B59698FA162F912103CA2D398 /* ScrollableGraphViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01153C01113BB30BC9716C893AF4C5 /* ScrollableGraphViewDataSource.swift */; };
+		D873BC4A262FB540DEBE83FE62B549CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		E03C7BDA0C4267D49127659A1D4BB7D1 /* LinePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3292484A60BFF46B94BA2BA818158E /* LinePlot.swift */; };
+		E0A5B70D1E562B17EE7928ABA39FCC12 /* GraphPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9460E8CCD7E7966F896C104D19BE166A /* GraphPoint.swift */; };
+		E1BB659E84A677991F855634BD02AF2E /* ScrollableGraphViewDrawingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A9F84CEC14CABD4AA4BF3F6A1C1857 /* ScrollableGraphViewDrawingDelegate.swift */; };
+		E3A24385903B796530A7CDA2EF0D5521 /* ScrollableGraphView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4661C3E5BC62AC6987420C3ED19EB8D6 /* ScrollableGraphView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62DE968469857B5EB09BA5DED46DE10 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7F02756F1F92B42D1824B7C173D22 /* ScrollableGraphView.swift */; };
+		EFCBBA0C55B0E0480431077841D2CEAE /* Pods-BodyWeightTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DFFBD7D36F70AF5450221BCE433C02 /* Pods-BodyWeightTracker-dummy.m */; };
+		FDB5B8AB069D6A43BD67D7AF617DF089 /* ReferenceLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C70D36F15C7099AC198DD4D62A23D4 /* ReferenceLines.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23FF84091256C0029D4DBD8CD264BF8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D96EFA0081E71300C0DDA5446EBED09;
+			remoteInfo = ScrollableGraphView;
+		};
+		D17357D267365FFFBC9C0A72C48DB45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0D3CE3379DA4B483688A012697E2F21;
+			remoteInfo = "Pods-BodyWeightTracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01EDFB4822FFBB23079E5C223AAAF480 /* Pods-BodyWeightTracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BodyWeightTracker.modulemap"; sourceTree = "<group>"; };
+		0288B89DF6B139384E26C2B991B77AB8 /* DotPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotPlot.swift; path = Classes/Plots/DotPlot.swift; sourceTree = "<group>"; };
+		04FB6795D4D519DA84D2E5482365403C /* Pods_BodyWeightTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BodyWeightTrackerTests.framework; path = "Pods-BodyWeightTrackerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06541AC641578E857865B7403D818B13 /* DotDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotDrawingLayer.swift; path = Classes/Drawing/DotDrawingLayer.swift; sourceTree = "<group>"; };
+		0725E40D466B505ECA643A2176E00DA4 /* ScrollableGraphView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableGraphView-dummy.m"; sourceTree = "<group>"; };
+		10115E787E4C909701226C343E6DA7C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1195F6666B8448A70A4B724A1AFBAFDF /* Pods-BodyWeightTracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BodyWeightTracker-frameworks.sh"; sourceTree = "<group>"; };
+		1392211B1EC3B84EF3F2C1E147C6BD1D /* Pods-BodyWeightTrackerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BodyWeightTrackerTests.modulemap"; sourceTree = "<group>"; };
+		17A9F84CEC14CABD4AA4BF3F6A1C1857 /* ScrollableGraphViewDrawingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingDelegate.swift; path = Classes/Protocols/ScrollableGraphViewDrawingDelegate.swift; sourceTree = "<group>"; };
+		3203157609CB473C4B8F50242518A56E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		383C36B4D1526870755352EB2F1194B9 /* GraphPointAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPointAnimation.swift; path = Classes/Plots/Animation/GraphPointAnimation.swift; sourceTree = "<group>"; };
+		3A49159E569B9C149852AB1885E4E173 /* FillDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillDrawingLayer.swift; path = Classes/Drawing/FillDrawingLayer.swift; sourceTree = "<group>"; };
+		3CF793481676F9CE653C739E16D50E9D /* GradientDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDrawingLayer.swift; path = Classes/Drawing/GradientDrawingLayer.swift; sourceTree = "<group>"; };
+		4661C3E5BC62AC6987420C3ED19EB8D6 /* ScrollableGraphView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-umbrella.h"; sourceTree = "<group>"; };
+		49C5744E0C2786A89FB65360D08C8CB0 /* ScrollableGraphViewDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingLayer.swift; path = Classes/Drawing/ScrollableGraphViewDrawingLayer.swift; sourceTree = "<group>"; };
+		4AB171068B54D1CC0B7C1B2EECD511F9 /* BarPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPlot.swift; path = Classes/Plots/BarPlot.swift; sourceTree = "<group>"; };
+		4F6AEE2CE8C0D7AC3E3FA46AEACA122D /* Pods-BodyWeightTracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BodyWeightTracker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		549CC55163B6F97680DCBCD18A9D4921 /* Pods-BodyWeightTrackerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BodyWeightTrackerTests-frameworks.sh"; sourceTree = "<group>"; };
+		5F56D9C96E8582036FAB30FEF12351A7 /* Pods-BodyWeightTrackerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BodyWeightTrackerTests-dummy.m"; sourceTree = "<group>"; };
+		63DFFBD7D36F70AF5450221BCE433C02 /* Pods-BodyWeightTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BodyWeightTracker-dummy.m"; sourceTree = "<group>"; };
+		67E7F02756F1F92B42D1824B7C173D22 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphView.swift; path = Classes/ScrollableGraphView.swift; sourceTree = "<group>"; };
+		6D1393556A9F8743C8E5525DFAE9ED68 /* ScrollableGraphView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-prefix.pch"; sourceTree = "<group>"; };
+		72C70D36F15C7099AC198DD4D62A23D4 /* ReferenceLines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLines.swift; path = Classes/Reference/ReferenceLines.swift; sourceTree = "<group>"; };
+		75090FAA398DE6157DBA74647F70F4F3 /* Pods-BodyWeightTrackerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BodyWeightTrackerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C662A2CF5A1B423916187C199CE5279 /* Pods-BodyWeightTracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BodyWeightTracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		83E3DB3F478CE22C65D457AF3061D620 /* ScrollableGraphView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollableGraphView.modulemap; sourceTree = "<group>"; };
+		84A59638ABEF497E7A6766DA1D796D26 /* Pods-BodyWeightTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BodyWeightTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		8516FCE986A75C528498E54CCD156FCC /* ReferenceLineDrawingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLineDrawingView.swift; path = Classes/Drawing/ReferenceLineDrawingView.swift; sourceTree = "<group>"; };
+		8A299B2C4F3B132DE01A63A1F82DCD0C /* ScrollableGraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollableGraphView.framework; path = ScrollableGraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9460E8CCD7E7966F896C104D19BE166A /* GraphPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPoint.swift; path = Classes/Plots/Animation/GraphPoint.swift; sourceTree = "<group>"; };
+		99AA358F6927B921B39BE616C159DB86 /* ScrollableGraphView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableGraphView.xcconfig; sourceTree = "<group>"; };
+		9A2C042BBD26C4799C51BDCEEF67D4FC /* Pods-BodyWeightTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BodyWeightTracker-resources.sh"; sourceTree = "<group>"; };
+		9B3292484A60BFF46B94BA2BA818158E /* LinePlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinePlot.swift; path = Classes/Plots/LinePlot.swift; sourceTree = "<group>"; };
+		9C9073AD1B8827FFAD099F06C5856977 /* BarDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarDrawingLayer.swift; path = Classes/Drawing/BarDrawingLayer.swift; sourceTree = "<group>"; };
+		9D01153C01113BB30BC9716C893AF4C5 /* ScrollableGraphViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDataSource.swift; path = Classes/Protocols/ScrollableGraphViewDataSource.swift; sourceTree = "<group>"; };
+		AC0D6F7AB879DB577AE519419FEF630B /* Pods-BodyWeightTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BodyWeightTracker.release.xcconfig"; sourceTree = "<group>"; };
+		ACCA206A04E9F983523B003079F45DA5 /* Plot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plot.swift; path = Classes/Plots/Plot.swift; sourceTree = "<group>"; };
+		BD9FDDA5028975B46AFD6A3FDAD279E7 /* Pods_BodyWeightTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BodyWeightTracker.framework; path = "Pods-BodyWeightTracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF644911BB6325D6FD862C78CD10ED23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5C774EDEBA58750604F94B653AF28F /* Pods-BodyWeightTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BodyWeightTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		D2E70AF8FE402B9BE6D27C69EE2E3453 /* LineDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineDrawingLayer.swift; path = Classes/Drawing/LineDrawingLayer.swift; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB070B2C45098F500B0D3FD93E6415B0 /* Pods-BodyWeightTrackerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BodyWeightTrackerTests-umbrella.h"; sourceTree = "<group>"; };
+		F6769E92A48911EF3251B48096D54391 /* Pods-BodyWeightTrackerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BodyWeightTrackerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F81D91E89605B3174FADD87345EFD5BF /* LabelPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelPool.swift; path = Classes/Reference/LabelPool.swift; sourceTree = "<group>"; };
+		FD59F838F846DEA606E369975A3AF7AB /* Pods-BodyWeightTrackerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BodyWeightTrackerTests-resources.sh"; sourceTree = "<group>"; };
+		FE569B45D3E873BA8CC017461EBA86A2 /* Pods-BodyWeightTracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BodyWeightTracker-umbrella.h"; sourceTree = "<group>"; };
+		FFEC64D83C7376665CF3543BBF9D755A /* Pods-BodyWeightTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BodyWeightTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C1ABD326D62F922BE52B9190F69425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3EDA836275C0316C985EB581298C55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917F6EDCEF5DCCDD459CA6108D4BA3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D873BC4A262FB540DEBE83FE62B549CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A127003D83CC3D1F2E67D3F3E9B97B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792A560496D04B818207ADEF281FEAEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6BBF215EBC633A90AE2F2A99A551E1E2 /* Pods-BodyWeightTracker */ = {
+			isa = PBXGroup;
+			children = (
+				3203157609CB473C4B8F50242518A56E /* Info.plist */,
+				01EDFB4822FFBB23079E5C223AAAF480 /* Pods-BodyWeightTracker.modulemap */,
+				4F6AEE2CE8C0D7AC3E3FA46AEACA122D /* Pods-BodyWeightTracker-acknowledgements.markdown */,
+				7C662A2CF5A1B423916187C199CE5279 /* Pods-BodyWeightTracker-acknowledgements.plist */,
+				63DFFBD7D36F70AF5450221BCE433C02 /* Pods-BodyWeightTracker-dummy.m */,
+				1195F6666B8448A70A4B724A1AFBAFDF /* Pods-BodyWeightTracker-frameworks.sh */,
+				9A2C042BBD26C4799C51BDCEEF67D4FC /* Pods-BodyWeightTracker-resources.sh */,
+				FE569B45D3E873BA8CC017461EBA86A2 /* Pods-BodyWeightTracker-umbrella.h */,
+				CB5C774EDEBA58750604F94B653AF28F /* Pods-BodyWeightTracker.debug.xcconfig */,
+				AC0D6F7AB879DB577AE519419FEF630B /* Pods-BodyWeightTracker.release.xcconfig */,
+			);
+			name = "Pods-BodyWeightTracker";
+			path = "Target Support Files/Pods-BodyWeightTracker";
+			sourceTree = "<group>";
+		};
+		7AF1675562732845C917D67CC240FB37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FDDA5028975B46AFD6A3FDAD279E7 /* Pods_BodyWeightTracker.framework */,
+				04FB6795D4D519DA84D2E5482365403C /* Pods_BodyWeightTrackerTests.framework */,
+				8A299B2C4F3B132DE01A63A1F82DCD0C /* ScrollableGraphView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BE2E4092A4DD462135ED6F266AE1E391 /* Pods */,
+				7AF1675562732845C917D67CC240FB37 /* Products */,
+				8BF33622821AB54F2A4830BB56B4068B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8BF33622821AB54F2A4830BB56B4068B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BBF215EBC633A90AE2F2A99A551E1E2 /* Pods-BodyWeightTracker */,
+				CE92C78E84F8FA710C7A889064074CA8 /* Pods-BodyWeightTrackerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9BB8B132911E953217D347356490B7C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10115E787E4C909701226C343E6DA7C0 /* Info.plist */,
+				83E3DB3F478CE22C65D457AF3061D620 /* ScrollableGraphView.modulemap */,
+				99AA358F6927B921B39BE616C159DB86 /* ScrollableGraphView.xcconfig */,
+				0725E40D466B505ECA643A2176E00DA4 /* ScrollableGraphView-dummy.m */,
+				6D1393556A9F8743C8E5525DFAE9ED68 /* ScrollableGraphView-prefix.pch */,
+				4661C3E5BC62AC6987420C3ED19EB8D6 /* ScrollableGraphView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ScrollableGraphView";
+			sourceTree = "<group>";
+		};
+		ADA9BDF8D784B27C59ED62A7207E58FE /* ScrollableGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				9C9073AD1B8827FFAD099F06C5856977 /* BarDrawingLayer.swift */,
+				4AB171068B54D1CC0B7C1B2EECD511F9 /* BarPlot.swift */,
+				06541AC641578E857865B7403D818B13 /* DotDrawingLayer.swift */,
+				0288B89DF6B139384E26C2B991B77AB8 /* DotPlot.swift */,
+				3A49159E569B9C149852AB1885E4E173 /* FillDrawingLayer.swift */,
+				3CF793481676F9CE653C739E16D50E9D /* GradientDrawingLayer.swift */,
+				9460E8CCD7E7966F896C104D19BE166A /* GraphPoint.swift */,
+				383C36B4D1526870755352EB2F1194B9 /* GraphPointAnimation.swift */,
+				F81D91E89605B3174FADD87345EFD5BF /* LabelPool.swift */,
+				D2E70AF8FE402B9BE6D27C69EE2E3453 /* LineDrawingLayer.swift */,
+				9B3292484A60BFF46B94BA2BA818158E /* LinePlot.swift */,
+				ACCA206A04E9F983523B003079F45DA5 /* Plot.swift */,
+				8516FCE986A75C528498E54CCD156FCC /* ReferenceLineDrawingView.swift */,
+				72C70D36F15C7099AC198DD4D62A23D4 /* ReferenceLines.swift */,
+				67E7F02756F1F92B42D1824B7C173D22 /* ScrollableGraphView.swift */,
+				9D01153C01113BB30BC9716C893AF4C5 /* ScrollableGraphViewDataSource.swift */,
+				17A9F84CEC14CABD4AA4BF3F6A1C1857 /* ScrollableGraphViewDrawingDelegate.swift */,
+				49C5744E0C2786A89FB65360D08C8CB0 /* ScrollableGraphViewDrawingLayer.swift */,
+				9BB8B132911E953217D347356490B7C9 /* Support Files */,
+			);
+			name = ScrollableGraphView;
+			path = ScrollableGraphView;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE2E4092A4DD462135ED6F266AE1E391 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADA9BDF8D784B27C59ED62A7207E58FE /* ScrollableGraphView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE92C78E84F8FA710C7A889064074CA8 /* Pods-BodyWeightTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF644911BB6325D6FD862C78CD10ED23 /* Info.plist */,
+				1392211B1EC3B84EF3F2C1E147C6BD1D /* Pods-BodyWeightTrackerTests.modulemap */,
+				F6769E92A48911EF3251B48096D54391 /* Pods-BodyWeightTrackerTests-acknowledgements.markdown */,
+				75090FAA398DE6157DBA74647F70F4F3 /* Pods-BodyWeightTrackerTests-acknowledgements.plist */,
+				5F56D9C96E8582036FAB30FEF12351A7 /* Pods-BodyWeightTrackerTests-dummy.m */,
+				549CC55163B6F97680DCBCD18A9D4921 /* Pods-BodyWeightTrackerTests-frameworks.sh */,
+				FD59F838F846DEA606E369975A3AF7AB /* Pods-BodyWeightTrackerTests-resources.sh */,
+				EB070B2C45098F500B0D3FD93E6415B0 /* Pods-BodyWeightTrackerTests-umbrella.h */,
+				FFEC64D83C7376665CF3543BBF9D755A /* Pods-BodyWeightTrackerTests.debug.xcconfig */,
+				84A59638ABEF497E7A6766DA1D796D26 /* Pods-BodyWeightTrackerTests.release.xcconfig */,
+			);
+			name = "Pods-BodyWeightTrackerTests";
+			path = "Target Support Files/Pods-BodyWeightTrackerTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B70A531B07CB48AFFF62C6D17CA4CB5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC0CA090ED7FFBB348415113EDB8A6E /* Pods-BodyWeightTracker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B78D0C5CFD78DC7CF3495200DBD6B1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C620BA67FE9E4263E16C17F434CD1BB /* Pods-BodyWeightTrackerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE7B19ABB5DFCDDA0F19D43E142CE0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A24385903B796530A7CDA2EF0D5521 /* ScrollableGraphView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9D96EFA0081E71300C0DDA5446EBED09 /* ScrollableGraphView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C973EA644DD97F6E757FDDDF44676BFD /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */;
+			buildPhases = (
+				6EE7B19ABB5DFCDDA0F19D43E142CE0C /* Headers */,
+				9ADF87EB17154320F895DF8ACF3CEAE0 /* Sources */,
+				16C1ABD326D62F922BE52B9190F69425 /* Frameworks */,
+				9EF8F7DE264DA50E402C8FB994763201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollableGraphView;
+			productName = ScrollableGraphView;
+			productReference = 8A299B2C4F3B132DE01A63A1F82DCD0C /* ScrollableGraphView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C57836B27F4F4289139E64F8DC5E1CD6 /* Pods-BodyWeightTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E7866C5E586FA87B90414540ABF2FD /* Build configuration list for PBXNativeTarget "Pods-BodyWeightTrackerTests" */;
+			buildPhases = (
+				2B78D0C5CFD78DC7CF3495200DBD6B1F /* Headers */,
+				D6B585EE2F647A2E2C473796C2045234 /* Sources */,
+				F2A127003D83CC3D1F2E67D3F3E9B97B /* Frameworks */,
+				C891170E39AA953FDB59E78853C0C346 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				481FB481904296BAFDBF96F286CD8792 /* PBXTargetDependency */,
+			);
+			name = "Pods-BodyWeightTrackerTests";
+			productName = "Pods-BodyWeightTrackerTests";
+			productReference = 04FB6795D4D519DA84D2E5482365403C /* Pods_BodyWeightTrackerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0D3CE3379DA4B483688A012697E2F21 /* Pods-BodyWeightTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC3DCD08EE73F78946D97F890C6FEAC /* Build configuration list for PBXNativeTarget "Pods-BodyWeightTracker" */;
+			buildPhases = (
+				2B70A531B07CB48AFFF62C6D17CA4CB5 /* Headers */,
+				B8758437F9FAC940C2A9C707ADAD09E1 /* Sources */,
+				917F6EDCEF5DCCDD459CA6108D4BA3AF /* Frameworks */,
+				4F9AE84C8B82C99DEC0DE0353711D621 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FDDDDD5F9CF4E0C9F26C2CD99BE3000 /* PBXTargetDependency */,
+			);
+			name = "Pods-BodyWeightTracker";
+			productName = "Pods-BodyWeightTracker";
+			productReference = BD9FDDA5028975B46AFD6A3FDAD279E7 /* Pods_BodyWeightTracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7AF1675562732845C917D67CC240FB37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0D3CE3379DA4B483688A012697E2F21 /* Pods-BodyWeightTracker */,
+				C57836B27F4F4289139E64F8DC5E1CD6 /* Pods-BodyWeightTrackerTests */,
+				9D96EFA0081E71300C0DDA5446EBED09 /* ScrollableGraphView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F9AE84C8B82C99DEC0DE0353711D621 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF8F7DE264DA50E402C8FB994763201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C891170E39AA953FDB59E78853C0C346 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ADF87EB17154320F895DF8ACF3CEAE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13404A0C0534DC9FC446E55A1D4AF073 /* BarDrawingLayer.swift in Sources */,
+				74B4ED70186F6F4F1FF2A03EC45CAC2B /* BarPlot.swift in Sources */,
+				9E75ECE18F9742D634D2FD8900A34CD3 /* DotDrawingLayer.swift in Sources */,
+				102120C0EAEB47AD5B780B8E3DCE6208 /* DotPlot.swift in Sources */,
+				6263350FF4D6EBE5C3E5749EF8759492 /* FillDrawingLayer.swift in Sources */,
+				4846B187852A32941EEFB844DCC36ED3 /* GradientDrawingLayer.swift in Sources */,
+				E0A5B70D1E562B17EE7928ABA39FCC12 /* GraphPoint.swift in Sources */,
+				551F5A0B01C5156D6B91C814478DE8F5 /* GraphPointAnimation.swift in Sources */,
+				55B9C1A56CB00D0ECB520814BFA1665E /* LabelPool.swift in Sources */,
+				86F1A11795EE1E0EC9EB58E275F7730F /* LineDrawingLayer.swift in Sources */,
+				E03C7BDA0C4267D49127659A1D4BB7D1 /* LinePlot.swift in Sources */,
+				CAAA5147C71509AF7141A6281380FA1C /* Plot.swift in Sources */,
+				24D90655DC4DFF6A99CF1972BF0E585A /* ReferenceLineDrawingView.swift in Sources */,
+				FDB5B8AB069D6A43BD67D7AF617DF089 /* ReferenceLines.swift in Sources */,
+				486B49D20F10AD961D1D07D702DD42B7 /* ScrollableGraphView-dummy.m in Sources */,
+				E62DE968469857B5EB09BA5DED46DE10 /* ScrollableGraphView.swift in Sources */,
+				CC1B3E5B59698FA162F912103CA2D398 /* ScrollableGraphViewDataSource.swift in Sources */,
+				E1BB659E84A677991F855634BD02AF2E /* ScrollableGraphViewDrawingDelegate.swift in Sources */,
+				7ED860995F13B4ADC2B0D0290C6D2B28 /* ScrollableGraphViewDrawingLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8758437F9FAC940C2A9C707ADAD09E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCBBA0C55B0E0480431077841D2CEAE /* Pods-BodyWeightTracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B585EE2F647A2E2C473796C2045234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E967E2AAB19380DB5A343524F714C5 /* Pods-BodyWeightTrackerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		481FB481904296BAFDBF96F286CD8792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BodyWeightTracker";
+			target = E0D3CE3379DA4B483688A012697E2F21 /* Pods-BodyWeightTracker */;
+			targetProxy = D17357D267365FFFBC9C0A72C48DB45E /* PBXContainerItemProxy */;
+		};
+		6FDDDDD5F9CF4E0C9F26C2CD99BE3000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScrollableGraphView;
+			target = 9D96EFA0081E71300C0DDA5446EBED09 /* ScrollableGraphView */;
+			targetProxy = 23FF84091256C0029D4DBD8CD264BF8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		27557D902049066244DA00CE3824C924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AA358F6927B921B39BE616C159DB86 /* ScrollableGraphView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				PRODUCT_MODULE_NAME = ScrollableGraphView;
+				PRODUCT_NAME = ScrollableGraphView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31B8B50788E3C6B91B0DA45B2F8ED788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0D6F7AB879DB577AE519419FEF630B /* Pods-BodyWeightTracker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BodyWeightTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BodyWeightTracker/Pods-BodyWeightTracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		772C49CFD0F400F7422E79F6791AA420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AA358F6927B921B39BE616C159DB86 /* ScrollableGraphView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				PRODUCT_MODULE_NAME = ScrollableGraphView;
+				PRODUCT_NAME = ScrollableGraphView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8000995DA02063BF3777393CD52061DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8168C871DA0DF80A3C14637160253F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFEC64D83C7376665CF3543BBF9D755A /* Pods-BodyWeightTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BodyWeightTrackerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BodyWeightTrackerTests/Pods-BodyWeightTrackerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9077F4508BCFC685E1C12F7C4D6D728C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5C774EDEBA58750604F94B653AF28F /* Pods-BodyWeightTracker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BodyWeightTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BodyWeightTracker/Pods-BodyWeightTracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCE133E2E0AF51E7FC52E61421F97A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A59638ABEF497E7A6766DA1D796D26 /* Pods-BodyWeightTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BodyWeightTrackerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BodyWeightTrackerTests/Pods-BodyWeightTrackerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
+				8000995DA02063BF3777393CD52061DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC3DCD08EE73F78946D97F890C6FEAC /* Build configuration list for PBXNativeTarget "Pods-BodyWeightTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9077F4508BCFC685E1C12F7C4D6D728C /* Debug */,
+				31B8B50788E3C6B91B0DA45B2F8ED788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61E7866C5E586FA87B90414540ABF2FD /* Build configuration list for PBXNativeTarget "Pods-BodyWeightTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8168C871DA0DF80A3C14637160253F5C /* Debug */,
+				DCE133E2E0AF51E7FC52E61421F97A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C973EA644DD97F6E757FDDDF44676BFD /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27557D902049066244DA00CE3824C924 /* Debug */,
+				772C49CFD0F400F7422E79F6791AA420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
